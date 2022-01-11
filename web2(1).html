@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <title>Registration Page</title>
+        <style>
+            table,td,th{
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <!--Personal details-->
+                <div>
+                    <h2>Submit Your Resume</h2>
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <label for="fname">*First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your first name"><br><br>
+                        <label for="mname">*Middle Name</label>
+                        <input type="text" id="mname" name="mname" placeholder="Enter your middle name"><br><br>
+                        <label for="lname">*Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Enter your last name"><br><br>
+                        <label for="dob">Date Of Birth</label>
+                        <input type="date" name="dob" id="dob"><br><br>
+                        <label for="age">Age in years :</label>
+                        <select name="age" id="age">
+                            <option value="greater than 0 and less than 10">>0 & <10</option>
+                            <option value="greater than 9 and less than 19">>9 & <19</option>
+                            <option value="greater than 18 and less than 31">>18 & <31</option>
+                            <option value="greater than 30">Others</option>
+                        </select>
+                        <br><br>
+                        <label for="gender">Gender :</label>
+                        <input type="radio" id="gender" name="gender">Male
+                        <input type="radio" id="gender" name="gender">Female
+                    </fieldset>
+                    <br>
+                    <input type="range" min="0" max="100" value="20" name="personal">
+                    <label for="personal">20% out of 100%</label>
+                    
+                </div>
+                <!--Address Details-->
+                <div>
+                    <fieldset>
+                        <legend>Address Details</legend>
+                        <label for="address">Address :</label>
+                        <input type="text" name="address" id="address"><br><br>
+                        <label for="city">City/Town :</label>
+                        <input type="text" name="city" id="city"><br><br>
+                        <label for="state">State :</label>
+                        <input type="text" name="state" id="state"><br><br>
+                        <label for="code">Zip Code :</label>
+                        <input type="text" name="code" id="code" placeholder="only 6 numbers"><br><br>
+                    </fieldset>
+                    <br>
+                    <input type="range" min="0" max="100" value="40" name="address">
+                    <label for="address">40% out of 100%</label>
+                </div>
+                <!--contact info-->
+                <div>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="tphone">Telephone :</label>
+                        <input type="tel" name="tphone" id="tphone" placeholder="(044) 999-9999"><br><br>
+                        <label for="mobile">Mobile :</label>
+                        <input type="tel" name="mobile" id="mobile" placeholder="(+91) 99999-99999"><br><br>
+                        <label for="mail">email :</label>
+                        <input type="email" name="mail" id="mail" placeholder="valid email"><br><br>
+                        <label for="url">Zip Code :</label>
+                        <input type="text" name="url" id="url" placeholder="valid url"><br><br>
+                    </fieldset>
+                    <br>
+                    <input type="range" min="0" max="100" value="60" name="contact">
+                    <label for="contact">60% out of 100%</label>
+                </div>
+                <!--educational details-->
+                <div>
+                    <fieldset>
+                        <legend>Educational Details</legend>
+                        <table>
+                            <tr>
+                                <th>&#9662; Qualification</th>
+                                <th>&#9662; Board/University</th>
+                                <th>&#9662; Country</th>
+                                <th>&#9662; Starting Year</th>
+                                <th>&#9662; Ending Year</th>
+                                <th>&#9662; Percentage</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="10" name="10">10th</td>
+                                <td><input type="text" id="10_board" name="10_board"></td>
+                                <td>
+                                    <select name="10_country" id="10_country">
+                                        <option value="choose">choose</option>
+                                    </select>
+                                </td>
+                                <td><input type="date" id="10_start_date" name="10_start_date"></td>
+                                <td><input type="date" id="10_end_date" name="10_end_date"></td>
+                                <td><input type="number" id="10_percentage" name="10_percentage"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="12" name="12">12th</td>
+                                <td><input type="text" id="12_board" name="12_board"></td>
+                                <td>
+                                    <select name="12_country" id="12_country">
+                                        <option value="choose">choose</option>
+                                    </select>
+                                </td>
+                                <td><input type="date" id="12_start_date" name="12_start_date"></td>
+                                <td><input type="date" id="12_end_date" name="12_end_date"></td>
+                                <td><input type="number" id="12_percentage" name="12_percentage"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="B.tech" name="B.tech">B.tech</td>
+                                <td><input type="text" id="B.tech" name="B.tech"></td>
+                                <td>
+                                    <select name="B.tech_country" id="B.tech_country">
+                                        <option value="choose">choose</option>
+                                    </select>
+                                </td>
+                                <td><input type="date" id="B.tech_start_date" name="B.tech_start_date"></td>
+                                <td><input type="date" id="B.tech_end_date" name="B.tech_end_date"></td>
+                                <td><input type="number" id="B.tech_percentage" name="B.tech_percentage"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="M.tech" name="M.tech">B.tech</td>
+                                <td><input type="text" id="M.tech" name="M.tech"></td>
+                                <td>
+                                    <select name="M.tech_country" id="M.tech_country">
+                                        <option value="choose">choose</option>
+                                    </select>
+                                </td>
+                                <td><input type="date" id="M.tech_start_date" name="M.tech_start_date"></td>
+                                <td><input type="date" id="M.tech_end_date" name="M.tech_end_date"></td>
+                                <td><input type="number" id="M.tech_percentage" name="M.tech_percentage"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <input type="range" min="0" max="100" value="80" name="educational">
+                    <label for="educational">80% out of 100%</label>
+                </div>
+                <!--Resume-->
+                <pre></pre>
+                <fieldset>
+                    <label for="resume">Attach your resume in .doc or .pdf format</label>
+                    <input type="file" id="resume" name="resume" accept=".doc,.pdf">
+                    <pre></pre>
+                    <input type="checkbox">I filled all the details
+                </fieldset>
+                <br>
+                <input type="range" min="0" max="100" value="100" name="file">
+                <label for="file">100% out of 100%</label>
+                <center>
+                    <pre></pre>
+                    <input type="submit" name="submit" id="submit">
+                </center>
+            </fieldset>
+        </form>
+    </body>
+</html>
